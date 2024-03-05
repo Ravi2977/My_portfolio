@@ -11,6 +11,16 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Ravi Maurya Portfolio Website</title>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "gRnAhI6GS0Gzlw9Ec",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -26,8 +36,9 @@
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work(Projects)</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="https://drive.google.com/file/d/1IGNjaT0zPSo-UP9FiOnucXMOf9MPDDrq/view?usp=drive_link" class="nav__link">Downlaod Resume</a></li>
                 </ul>
             </div>
 
@@ -41,16 +52,16 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ravi Maurya</span><br>Jr. Full Stack
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ravi Maurya</span><br>Full Stack
                     Java<br> Developer</h1>
 
-                <a href="#" class="button">Contact</a>
+                <a href="#contact" class="button">Contact</a>
             </div>
 
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/ravi-maurya-1a37331b6/" class="home__social-icon"><i
                         class='bx bxl-linkedin'></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+                <a href="https://www.instagram.com/iam__bad___boy/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
                 <a href="https://github.com/Ravi2977" class="home__social-icon"><i class='bx bxl-github'></i></a>
             </div>
 
@@ -76,14 +87,15 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/about.png" alt="">
+                    <img src="assets/img/about.jpg" alt="">
                 </div>
 
                 <div>
                     <h2 class="about__subtitle">I'am Ravi Maurya</h2>
-                    <p class="about__text">"I am skilled in HTML, CSS, JavaScript, and Java. I completed my schooling
-                        and college education in Uttar Pradesh. Currently, I am undergoing training at TATA Strive in
-                        Anand, Gujarat, holding the position of a Junior Full Stack Java Developer."</p>
+                    <p class="about__text">"I am skilled in HTML, CSS, JavaScript, JAVA, Spring boot, Bootstrap, Tailwind CSS, Git, GitHub, MySQL, React Js and Node JS. I have completed my schooling
+                        and college education in Uttar Pradesh. Recentlly , I have completed an industry level comprehensive training at TATA Strive in
+                        Anand, Gujarat, holding the position of a Junior Full Stack Java Developer.<br> During this training I worked on many projects some are individual and One is Major team project to knnow more about my projects got to my work "</p>
+                   
                 </div>
             </div>
         </section>
@@ -95,7 +107,7 @@
             <div class="skills__container bd-grid">
                 <div>
                     <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Proficient in HTML, CSS, JavaScript, React, and Java, I specialize in
+                    <p class="skills__text">Proficient in HTML, CSS, JavaScript, React, and Java, springboot, MySQL, git, gitHub,Tailwind CSS I specialize in
                         crafting visually appealing web layouts using HTML/CSS, adding interactivity with JavaScript,
                         and building intuitive interfaces with React. With Java, I develop robust backend systems,
                         ensuring seamless, user-centric applications across frontend and backend domains.</p>
@@ -128,11 +140,11 @@
                             <i class='bx bxl-javascript skills__icon'></i>
                             <span class="skills__name">JAVASCRIPT</span>
                         </div>
-                        <div class="skills__bar skills__js">
+                        <div class="skills__bar skills__css">
 
                         </div>
                         <div>
-                            <span class="skills__percentage">65%</span>
+                            <span class="skills__percentage">85%</span>
                         </div>
                     </div>
                     <div class="skills__data">
@@ -140,11 +152,23 @@
                             <i class='bx bxl-react skills__icon'></i>
                             <span class="skills__name">React</span>
                         </div>
-                        <div class="skills__bar skills__ux">
+                        <div class="skills__bar skills__css">
 
                         </div>
                         <div>
                             <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-spring_boot skills__icon'></i>
+                            <span class="skills__name">JAVA(spring boot)</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
                         </div>
                     </div>
                 </div>
@@ -160,23 +184,23 @@
             <h2 class="section-title">Work</h2>
 
             <div class="work__container bd-grid">
-                <a href="" class="work__img">
-                    <img src="assets/img/work1.jpg" alt="">
+                <a href="https://my-portfolio-nine-cyan.vercel.app/" class="work__img">
+                    <img src="assets/img/1.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work2.jpg" alt="">
+                <a href="https://news-app-news-monkey-seven.vercel.app/general" class="work__img">
+                    <img src="assets/img/newsmonkey.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work3.jpg" alt="">
+                <a href="https://spotify-clone-kappa-mauve.vercel.app/" class="work__img">
+                    <img src="assets/img/music app.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work4.jpg" alt="">
+                <a href="https://text-analyzer-sigma.vercel.app/" class="work__img">
+                    <img src="assets/img/textAnylyzer.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work5.jpg" alt="">
+                <a href="https://tic-tac-toe-game-ten-beta.vercel.app/" class="work__img">
+                    <img src="assets/img/tic tac toe.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work6.jpg" alt="">
+                <a href="https://trade-mate-pearl.vercel.app/usersDashboard" class="work__img">
+                    <img src="assets/img/trademate.png" alt="">
                 </a>
             </div>
         </section>
@@ -187,10 +211,10 @@
 
             <div class="contact__container bd-grid">
                 <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button">
+                    <input type="text" id="name" placeholder="Name" class="contact__input">
+                    <input type="mail" id="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="message" cols="0" rows="10" class="contact__input"></textarea>
+                    <input onclick="sendMail()" type="button" value="Submit" class="contact__button button">
                 </form>
             </div>
         </section>
@@ -200,11 +224,11 @@
     <footer class="footer">
         <p class="footer__title">Ravi Maurya</p>
         <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100038925252817&mibextid=ZbWKwL" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/iam__bad___boy/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/ravi-maurya-1a37331b6/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
         </div>
-        <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        <p class="footer__copy">&#169; Ravi Maurya. All rigths reserved</p>
     </footer>
 
 
@@ -213,6 +237,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
